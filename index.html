@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-cream">
+
+  <div class="flex flex-col justify-center px-4 w-screen h-screen font-montserrat font-medium">
+    <div class="flex flex-col rounded-xl overflow-hidden">
+      <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence image" />
+      <div class="flex flex-col bg-white gap-y-2 px-[1.6rem] py-6">
+        <div class="text-[13px] text-grayish uppercase tracking-[0.3em]">
+          Perfume
+        </div>
+
+        <div class="font-fraunces text-darkblue font-bold text-[32px] leading-8 pb-1.5">
+          Gabrielle Essence Eau De Parfum
+        </div>
+
+        <div class="text-sm leading-relaxed text-grayish mb-2.5">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </div>
+
+        <div class="flex flex-row mb-1">
+          <div class="text-[32px] font-fraunces text-darkcyan mr-5">$149.99</div>
+          <div class="text-[13px] line-through text-grayish pt-3.5">$169.99</div>
+        </div>
+
+        <button class="flex flex-row justify-center items-center h-12 bg-darkcyan text-white rounded-lg">
+          <img class="inline-block mr-2.5" src="images/icon-cart.svg" alt="Cart icon" />
+          <span class="text-sm">Add to Cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
