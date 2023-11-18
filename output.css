@@ -539,6 +539,14 @@ video {
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -579,28 +587,12 @@ video {
   height: 100vh;
 }
 
+.w-\[344px\] {
+  width: 344px;
+}
+
 .w-screen {
   width: 100vw;
-}
-
-.w-\[345px\] {
-  width: 345px;
-}
-
-.min-w-\[360px\] {
-  min-width: 360px;
-}
-
-.min-w-\[330px\] {
-  min-width: 330px;
-}
-
-.min-w-\[343px\] {
-  min-width: 343px;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .flex-row {
@@ -648,11 +640,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-\[1\.6rem\] {
@@ -718,8 +705,8 @@ video {
   line-height: 2rem;
 }
 
-.leading-relaxed {
-  line-height: 1.625;
+.leading-\[1\.375rem\] {
+  line-height: 1.375rem;
 }
 
 .tracking-\[0\.3em\] {
@@ -746,6 +733,45 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-grayish\/10 {
+  color: hsl(228 12% 48% / 0.1);
+}
+
 .line-through {
   text-decoration-line: line-through;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:w-\[38rem\] {
+    width: 38rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:gap-y-4 {
+    row-gap: 1rem;
+  }
+
+  .sm\:p-\[2\.125rem\] {
+    padding: 2.125rem;
+  }
+
+  .sm\:transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .sm\:hover\:bg-darkercyan:hover {
+    --tw-bg-opacity: 1;
+    background-color: hsl(158 36% 20% / var(--tw-bg-opacity));
+  }
 }
